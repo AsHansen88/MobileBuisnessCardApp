@@ -13,7 +13,10 @@ export default function App() {
   };
 
   return (
+
+
     <View style={styles.container}>
+       <Image source={require('./pictures/dong.png')} style={styles.logoContainer} />
       <Image source={require('./pictures/Anders.png')} style={styles.image} />
       <Text style={styles.name}>Anders Hansen</Text>
       <Text style={styles.jobTitle}>Software Developer</Text>
@@ -49,6 +52,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#f0f0f0',
     borderRadius: 10,
     margin: 20,
+    position: 'relative', // Add this line
   },
   name: {
     fontSize: 24,
@@ -78,6 +82,19 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     marginBottom: 10,
   },
+
+  // Logo styles
+  logoContainer: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    padding: 10,
+  },
+  logo: {
+    width: 20,
+    height: 10,
+  },
+
   sectionTitle: {
     fontSize: 20,
     fontWeight: 'bold',
