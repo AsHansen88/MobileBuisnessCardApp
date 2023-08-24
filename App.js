@@ -22,13 +22,15 @@ export default function App() {
 
         <Image source={require('./pictures/Anders.png')} style={styles.image} />
 
-        <Text style={styles.name}>Anders</Text>
+        <Text style={styles.name}>Anders Hansen</Text>
         <Text style={styles.jobTitle}>Software Developer</Text>
         <Text style={styles.email}>Ande970s@stud.kea.dk</Text>
 
         <View style={styles.buttonContainer}>
                 <Button title="Email" onPress={handleEmailPress} />
                 <Button title="Facebook" onPress={handleFacebookPress} />
+
+
               </View>
         <Text style={styles.phone}>50405381</Text>
       </View>
@@ -62,6 +64,13 @@ const styles = StyleSheet.create({
         fontSize: 16,
         color: '#333',
       },
+
+      buttonContainer: {
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          marginTop: 10,
+        },
+
       phone: {
         fontSize: 16,
         color: '#333',
