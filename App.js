@@ -8,7 +8,7 @@ export default function App() {
 
   const handleEmailPress = () => {
 
-      Linking.openURL('ande970s@stud.kea.dk');
+      Linking.openURL('mailto:ande970s@stud.kea.dk');
     };
 
     const handleFacebookPress = () => {
@@ -30,10 +30,23 @@ export default function App() {
                 <Button title="Email" onPress={handleEmailPress} />
                 <Button title="Facebook" onPress={handleFacebookPress} />
 
-
               </View>
         <Text style={styles.phone}>50405381</Text>
+
+<Text style={styles.about}>
+<h2> About </h2>
+        First app created by android student at kea
+      </Text>
+
+<Text style={styles.interests}>
+
+<h2> Interests </h2>
+        Games, internet fanatic, programming, documentary etc.
+      </Text>
+
       </View>
+
+
 
 )
 }
@@ -70,6 +83,19 @@ const styles = StyleSheet.create({
           justifyContent: 'space-between',
           marginTop: 10,
         },
+ about: {
+    fontSize: 16,
+    color: '#333',
+    marginTop: 10,
+    textAlign: 'center',
+},
+
+interests: {
+    fontSize: 16,
+    color: '#333',
+    marginTop: 10,
+    textAlign: 'center',
+},
 
       phone: {
         fontSize: 16,
