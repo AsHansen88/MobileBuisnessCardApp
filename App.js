@@ -42,6 +42,9 @@ export default function App() {
   );
 }
 
+
+//CSS
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -65,12 +68,14 @@ const styles = StyleSheet.create({
   email: {
     fontSize: 16,
     color: '#333',
-  },
+
+      },
   buttonContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginTop: 10,
-  },
+   },
+
   phone: {
     fontSize: 16,
     color: '#333',
@@ -83,7 +88,6 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
 
-  // Logo styles
   logoContainer: {
     position: 'absolute',
     top: 0,
