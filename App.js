@@ -89,10 +89,8 @@ const styles = StyleSheet.create({
     top: 0,
     right: 0,
     padding: 10,
-  },
-  logo: {
-    width: 20,
-    height: 10,
+    width: 200,
+    height: 60,
   },
 
   sectionTitle: {
